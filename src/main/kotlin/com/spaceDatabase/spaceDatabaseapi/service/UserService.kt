@@ -2,8 +2,9 @@ package com.spaceDatabase.spaceDatabaseapi.service
 
 import com.spaceDatabase.spaceDatabaseapi.model.User
 import com.spaceDatabase.spaceDatabaseapi.repository.UserRepository
-import java.util.*
+import org.springframework.stereotype.Service
 
+@Service
 class UserService(private val userRepository: UserRepository) {
 
     fun getUsers() : List<User> {
